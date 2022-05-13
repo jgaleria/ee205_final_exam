@@ -14,8 +14,8 @@
 using namespace std;
 
 //Area
-double Shape::compute_area(const double length, const double width) const noexcept{
-    return length * width;
+double Shape::compute_area() const noexcept{
+    return 0.0;
 }
 
 
