@@ -21,7 +21,7 @@ public:
 public:
     double getSide() const;
 
-    double compute_area() const noexcept;
+    double compute_area() const noexcept override;
 };
 
 

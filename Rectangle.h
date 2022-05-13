@@ -35,7 +35,7 @@ protected:
 
     //Methods
 public:
-    double compute_area() const noexcept;
+    double compute_area() const noexcept override;
 
     bool validate() const noexcept;
 };

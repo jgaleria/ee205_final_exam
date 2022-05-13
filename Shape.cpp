@@ -14,7 +14,7 @@
 using namespace std;
 
 //Area
-double Shape::compute_area() const noexcept{
+double Shape::compute_area() const noexcept {
     return 0.0;
 }
 
