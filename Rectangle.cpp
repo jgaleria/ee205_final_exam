@@ -10,13 +10,15 @@
 ///////////////////////////////////////////////////////////////////////////////
 #include "Rectangle.h"
 
-//2 float members newLength and newWidth
+//2 double members newLength and newWidth
 
 
 //Constructor w/ length and width
 Rectangle::Rectangle(float newLength,
                      float newWidth)
-                     {}
+                     {
+    Rectangle::validate();
+                     }
 
 //Getters for length and width
 double Rectangle::getLength() const {
@@ -35,5 +37,11 @@ double Rectangle::compute_area() const noexcept {
 
 //Validate function
 bool Rectangle::validate() const noexcept {
+    if( Rectangle::getWidth() <= 0 ) {
+        return false;
+    }
+    if( Rectangle::getLength() <= 0) {
+        return false;
+    }
     return true;
 }
